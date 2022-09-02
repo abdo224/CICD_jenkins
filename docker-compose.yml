@@ -1,0 +1,14 @@
+version: '2'
+services:
+  jenkins:
+    image: 'jenkins'
+    container_name: "jenkins"
+    labels: 
+      kompose.service.type: nodeport
+    ports:
+     - '8080:8080'
+     - '443:8443'
+     - '50000:50000'
+    volumes:
+      - .:/jenkins_home
+      - .:/jenkins_config
