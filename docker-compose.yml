@@ -10,5 +10,10 @@ services:
      - '443:8443'
      - '50000:50000'
     volumes:
-      - .:/jenkins_home
-      - .:/jenkins_config
+      - ./jenkins_data:/jenkins_home
+      - ./jenkins:/jenkins_config
+volumes:
+  jenkins_data:
+    driver: local
+  jenkins:
+    driver: local        
