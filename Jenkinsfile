@@ -1,6 +1,6 @@
 node {
   stage('clone'){
-    git https://github.com/abdo224/CICD_jenkins.git
+    git 'https://github.com/abdo224/CICD_jenkins.git'
 
   }
   stage('build'){
