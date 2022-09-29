@@ -6,8 +6,8 @@ node {
   stage('build'){
     sh label: '', script: 'javac Main.java'
   }
-  stage('build'){
-    sh label: '', script: 'javac Main.java'
+  stage('run'){
+    sh label: '', script: 'java Main'
   }
 
 
