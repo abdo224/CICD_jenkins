@@ -26,6 +26,15 @@ pipeline {
   
   
   }
+  post {
+    succes {
+      echo " Succesfully steup the pipeline .. "
+    }
+    failure {
+      echo " failed setting up the pipeline .."
+    }
+  
+  }
   
 
 
