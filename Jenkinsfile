@@ -1,14 +1,32 @@
-node {
-  stage('clone'){
-    git 'https://github.com/abdo224/CICD_jenkins.git'
-
+pipeline {
+  agent any
+  stages {
+    stage('build'){
+      steps {
+        echo " Building the application .."
+      }
+    
+    
+    }
+    stage('Test'){
+      steps {
+        echo " Testing the application .."
+      }
+    
+    
+    }
+    stage('Run'){
+      steps {
+        echo " Running the application .."
+      }
+    
+    
+    }
+  
+  
+  
   }
-  stage('build'){
-    sh label: '', script: 'javac Main.java'
-  }
-  stage('run'){
-    sh label: '', script: 'java Main'
-  }
+  
 
 
 }
