@@ -27,7 +27,7 @@ pipeline {
   
   }
   post {
-    succes {
+    success {
       echo " Succesfully steup the pipeline .. "
     }
     failure {
